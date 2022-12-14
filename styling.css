@@ -1,0 +1,60 @@
+body {
+    font-family: 'Courier New';
+    font-weight: bold;
+}
+
+.Container {
+    width: 800px;
+}
+
+.Todo-Form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-top: 40px;
+}
+
+#addButton {
+    width: 70px;
+    padding: 5px;
+}
+
+.DateAndChoirs {
+    display: flex;
+    flex-direction: row;
+}
+
+.CategoryBox {
+    display: inline;
+}
+
+.ListBox {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.List-Box-Header {
+    display: flex;
+    justify-content:left;
+}
+
+.List-Box-Header span {
+    margin-right: 70px
+}
+;
+.List-Box-Item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: 2px;
+}
+
+.List-Box-Item span {
+    margin-right: 130px;
+}
+
+.Red {
+    color: red;
+}

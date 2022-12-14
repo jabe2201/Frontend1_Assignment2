@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODOS</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+
+
+<body>
+    <div class="Container">
+        <div class="Todo-Form">
+            <label for="Todoentry">Lägg till "Att göra"</label>
+            <input id="Todoentry" type="text">
+            <div class="DateAndChoirs">
+                <input id="Date" type="date">
+                <select name="categories" id="Categories">
+                    <option value="Jobb">Jobb</option>
+                    <option value="Hushållsarbete">Hushållsarbete</option>
+                </select>
+            </div>
+            <button onclick="addTodo()" id="addButton">Lägg till</button>
+            <label for="SearchForm">Filtrera på sökord</label>
+            <input type="text" name="SearchBox" id="SearchBox">
+            <div class="CategoryBox">
+                <input class="RadioButton" type="radio" name="radio">
+                <label for="RadioAll">Alla</label>
+                <input class="RadioButton" type="radio" name="radio">
+                <label for="RadioWork">Jobb</label>
+                <input class="RadioButton" type="radio" name="radio">
+                <label for="RadioChoirs">Hushållsarbete</label>
+            </div>
+            <div class="ListBox">
+                <div class="List-Box-Header">
+                    <span>Uppgift</span>
+                    <span>Skall vara färdigt</span>
+                    <span>Katergori</span>
+                </div>
+                <div id="item-0">
+                    <span>Plugga</span>
+                    <span>2022-12-14</span>
+                    <span>Jobb</span>
+                    <button id="button-0" onclick="removeEntry(this.id)">Ta bort</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    <script src="./mySript.js"></script>
+</body>
+</html>
