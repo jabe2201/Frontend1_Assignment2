@@ -9,7 +9,7 @@
 </head>
 
 
-<body>
+<body onload="refreshList()">
     <div class="Container">
         <div class="Todo-Form">
             <label for="Todoentry">Lägg till "Att göra"</label>
@@ -23,13 +23,13 @@
             </div>
             <button onclick="addTodo()" id="addButton">Lägg till</button>
             <label for="SearchForm">Filtrera på sökord</label>
-            <input type="text" name="SearchBox" id="SearchBox">
+            <input type="text" onkeyup="filterList(SearchBox.value)" name="SearchBox" id="SearchBox">
             <div class="CategoryBox">
-                <input class="RadioButton" type="radio" name="radio">
+                <input id="All" class="RadioButton" type="radio" name="radio" onclick="radioSelectFilter(this.id)">
                 <label for="RadioAll">Alla</label>
-                <input class="RadioButton" type="radio" name="radio">
+                <input id="Jobb" class="RadioButton" type="radio" name="radio" onclick="radioSelectFilter(this.id)">
                 <label for="RadioWork">Jobb</label>
-                <input class="RadioButton" type="radio" name="radio">
+                <input id="Hushållsarbete" class="RadioButton" type="radio" name="radio" onclick="radioSelectFilter(this.id)">
                 <label for="RadioChoirs">Hushållsarbete</label>
             </div>
             <div class="ListBox">
@@ -37,12 +37,6 @@
                     <span>Uppgift</span>
                     <span>Skall vara färdigt</span>
                     <span>Katergori</span>
-                </div>
-                <div id="item-0">
-                    <span>Plugga</span>
-                    <span>2022-12-14</span>
-                    <span>Jobb</span>
-                    <button id="button-0" onclick="removeEntry(this.id)">Ta bort</button>
                 </div>
             </div>
         </div>

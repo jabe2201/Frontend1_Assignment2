@@ -36,11 +36,11 @@ body {
 
 .List-Box-Header {
     display: flex;
-    justify-content:left;
+    justify-content:space-between;
 }
 
 .List-Box-Header span {
-    margin-right: 70px
+    margin-right: 100px
 }
 ;
 .List-Box-Item {
@@ -48,13 +48,21 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: left;
-    margin: 2px;
+    
 }
 
 .List-Box-Item span {
-    margin-right: 130px;
+    margin-right: 100px;
 }
 
 .Red {
     color: red;
+}
+
+.Hide {
+    display: none;
+}
+
+.Hide-Radio {
+    display: none;
 }
